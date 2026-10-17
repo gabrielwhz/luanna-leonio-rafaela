@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lança Perfume</title>
+</head>
+
+<style>
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    @view-transition {
+        navigation: auto;
+    }
+
+    .cupom {
+        display: flex;
+        background-color: black;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: white;
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        font-size: 50px;
+    }
+
+    .titulo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .navegar-head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        color: black;
+        gap: 20px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .navegar-head a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .navegar-head img {
+        width: 70px;
+        height: auto;
+    }
+
+    header hr {
+        width: 100%;
+        background-color: black;
+        border: none;
+        border-top: 3px dashed #fff;
+    }
+
+    .container-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .left img {
+        width: auto;
+        height: 700px;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .center h1 {
+        position: absolute;
+        background-color: black;
+        color: white;
+        width: 400px;
+        height: 75px;
+        padding: 20px;
+        font-size: 50px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .app {
+        position: absolute;
+        top: 60%;
+        left: 49.8%;
+        transform: translate(-50%, -50%);
+    }
+
+    .app h2 {
+        font-size: 30px;
+    }
+
+    .qr-code {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .qr-code img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .qr-code p {
+        font-size: 20px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .right img {
+        width: auto;
+        height: 700px;
+    }
+
+    .container-3 {
+        background-color: #000000;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .container-3 img {
+        width: 75px;
+        height: 75px;
+    }
+
+</style>
+
+<body>
+    <header>
+        <div class="cupom">
+            <h1>PRIMEIRA COMPRA | Ganhe 15%OFF 
+                com o cumpo: WELCOMELP</h1>
+        </div>
+
+        <div class="container">
+            <div class="titulo"><a href="lp.html"><b>Lança Perfume</b></a></div>
+            <div class="navegar-head">
+                <div class="navegar"><a href="lp.html">PRIMAVERA</a></div>
+                <div class="navegar"><a href="#main-2-id">Categorias</a></div>
+                <div class="navegar"><a href="bolsas-e-calçados.html">Bolsas e Calçados</a></div>
+                <div class="navegar"><a href="outlet.html">OUTLET</a></div>
+                <img src="assets/sacola.png">
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <div class="container-2">
+        <div class="left">
+            <div class="modelo-1"><img src="assets/outlet/modelo_1.png"></div>
+            <div class="modelo-2"><img src="assets/outlet/modelo_2.png"></div>
+        </div>
+
+        <div class="center">
+            <h1>"LP - 20 ANOS"</h1>
+            <div class="app">
+                <h2><b>COMPRE PELO APLICATIVO</b></h2>
+                <div class="qr-code">
+                    <img src="assets/outlet/qr_code.png">
+                    <p>
+                        Aproveite conteúdo exclusivo no <br>
+                        nosso app. Escaneie o código <br>
+                        para fazer dowload
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="assets/outlet/modelo_3.png">
+            <img src="assets/outlet/modelo_4.png">
+        </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="container-3">
+            <h1>SIGA NOSSOS CANAIS OFICIAS</h1>
+            <div class="imagens">
+                <img src="assets/outlet/instagram.png">
+                <img src="assets/outlet/pinterest.png">
+                <img src="assets/outlet/tiktok.png">
+                <img src="assets/outlet/whatsapp.png">
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+</html>

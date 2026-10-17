@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lança Perfume</title>
+</head>
+
+<style>
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    @view-transition {
+        navigation: auto;
+    }
+
+    .cupom {
+        display: flex;
+        background-color: black;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: white;
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        font-size: 50px;
+    }
+
+    .titulo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .navegar-head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        color: black;
+        gap: 20px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .navegar-head a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .navegar-head img {
+        width: 70px;
+        height: auto;
+    }
+
+    header hr {
+        width: 100%;
+        background-color: black;
+        border: none;
+        border-top: 3px dashed #fff;
+    }
+
+    .main-1 {
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .main-1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-faixas {
+        position: relative;
+        width: 100%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center;     
+        gap: 20px;               
+    }
+
+    .faixa-branca, .faixa-preta {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        z-index: 1; 
+    }
+
+    .faixa-branca {
+        top: 0;
+        background-color: #fff;
+    }
+
+    .faixa-preta {
+        bottom: 0;
+        background-color: #000000;
+    }
+
+    .imagem-faixa {
+        position: relative; 
+        z-index: 10;        
+        width: 150px;
+        height: auto;
+    }
+
+    .divisao-mains {
+        margin-top: 75px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        border-top: 3px dashed white;
+    }
+
+    .main-2 {
+        margin-top: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .caracters {
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        gap: 80px;
+    }
+
+    .caracters a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .textos {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        width: 900px;
+        font-size: 25px;
+    }
+
+    .main-2 img {
+        width: 900px;
+        height: auto;
+    }
+
+    .end-main2 {
+        background-color: #000000;
+        width: 100%;
+        height: 30px;
+    }
+
+    .la-casa {
+        position: absolute;
+        top: 205%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .la-casa h1 {
+        background-color: black;
+        color: white;
+        width: 450px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+    }
+
+    .primavera-27 h1 {
+        position: absolute;
+        display: flex;
+        top: 223%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+    }
+
+    .primavera-27 img {
+        position: absolute;
+        display: flex;
+        top: 248%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        width: 265px;
+        height: auto;
+    }
+    
+</style>
+
+<body>
+    <header>
+        <div class="cupom">
+            <h1>PRIMEIRA COMPRA | Ganhe 15%OFF 
+                com o cumpo: WELCOMELP</h1>
+        </div>
+
+        <div class="container">
+            <div class="titulo"><a href="lp.html"><b>Lança Perfume</b></a></div>
+            <div class="navegar-head">
+                <div class="navegar"><a href="lp.html">PRIMAVERA</a></div>
+                <div class="navegar"><a href="#main-2-id">Categorias</a></div>
+                <div class="navegar"><a href="bolsas-e-calçados.html">Bolsas e Calçados</a></div>
+                <div class="navegar"><a href="outlet.html">OUTLET</a></div>
+                <img src="assets/sacola.png">
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <div class="main-1">
+            <img src="assets/main.jpg">
+        </div>
+
+        <div class="container-faixas">
+            <div class="faixa-branca"></div>
+            <div class="faixa-preta"></div>
+            <img src="assets/esquerda-faixa.png" class="imagem-faixa">
+            <img src="assets/centroesquerda-faixa.png" class="imagem-faixa">
+            <img src="assets/centrodireita-faixa.png" class="imagem-faixa">
+            <img src="assets/direita-faixa.png" class="imagem-faixa">
+        </div>
+        
+        <hr id="main-2-id" class="divisao-mains">
+
+        <div class="main-2">
+            <div id="main-2-id-2" class="caracters">
+                <div class="textos">Todas as peças</div>
+                <div class="textos"><a href="bolsas-e-calçados.html">Bolsas e calçados</a></div>
+                <div class="textos"><a href="vestidos-e-macacões.html">Vestidos e macacões</a></div>
+                <div class="textos"><a href="blusas-e-tshirts.html">Blusas e T-shirts</a></div>
+                <div class="textos"><a href="casacos-e-blazers.html">Casacos e Blazers</a></div>
+            </div>
+            <img src="assets/main2.jpg">
+        </div>
+
+        <div class="main-2-textos">
+            <div class="la-casa"><h1>"LA CASA"</h1></div>
+            <div class="primavera-27">
+                <h1>Coleção - Primavera 27</h1>
+                <img src="assets/sub-main2.jpg">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr class="end-main2">
+    </footer>
+</body>
+</html>
