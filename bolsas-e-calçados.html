@@ -159,6 +159,143 @@
         height: 15px;
     }
 
+    .divisao-linhas {
+        display: none;
+    }
+
+    /*tira a nav-bar do modo pc*/
+
+    .nav-bar {
+        display: none;
+    }
+
+    /*fim do comando*/
+
+
+    @media (max-width: 485px) {
+
+        /*barra de navegação (final de todas as páginas)*/
+
+        .nav-bar {
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            gap: 80px;
+            margin-top: 50px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .linha-navbar {
+            background-color: #000000;
+            width: 100%;
+            height: 3px;
+        }
+
+        .textos {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            width: 437px;
+            font-size: 18px;
+        }
+
+        .textos-mobile {
+            display: flex;
+            color: black;
+            font-size: 26px;
+        }
+
+        /*fim da nav-bar*/
+    
+        .cupom {
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            align-items: center;
+            justify-content: center;
+            font-size: 6px;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background-color: white;
+        }
+
+        .titulo {
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+        }
+
+        .titulo a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .navegar-head {
+            display: none;
+        } 
+
+        .parte-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .parte-1 img {
+            width: 200px;
+            height: auto;
+        }
+
+        .tamanho-errado img {
+            width: 240px;
+            height: auto;
+        }
+
+        .catalogo hr {
+            width: 100%;
+            background-color: black;
+            border: none;
+            border-top: 3px dashed #fff;
+        }
+
+        .linha-de-cima {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .linha-de-baixo {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .linha-de-baixo img {
+            width: 200px;
+            height: auto;
+        }
+
+        .divisao-linhas {
+            display: flex;
+        }
+
+        .tamanho-errado-8 img {
+            width: 160px;
+            height: auto;
+            margin-right: 45px;
+        }
+    }
+
 </style>
 
 <body>
@@ -206,6 +343,8 @@
                     <div class="tamanho-errado-6"><img src="assets/bolças e calçados/15_mala_rodinha_lanca_perfume_easy.png"></div>
                 </div>
                 
+                <hr class="divisao-linhas">
+
                 <div class="linha-de-baixo">
                     <img src="assets/bolças e calçados/16_carteira_pespontada_enfeite_lanca.png">
                     <img src="assets/bolças e calçados/17_carteira_com_ziper_lp.png">
@@ -215,6 +354,21 @@
                     <div class="tamanho-errado-8"><img src="assets/bolças e calçados/21_cinto_cintura_elo_lp.png"></div>
                 </div>
         </div>
+
+       <!-- barra de navegação (final de todas as páginas) -->
+
+        <div id="main-2-id-2" class="nav-bar">
+            <hr class="linha-navbar">
+            <div class="textos-mobile">Navegue por categoria</div>
+            <div class="textos"><a href="lp.html">Inicio</a></div>                
+            <div class="textos"><a href="bolsas-e-calçados.html">Bolsas e calçados</a></div>
+            <div class="textos"><a href="vestidos-e-macacões.html">Vestidos e macacões</a></div>
+            <div class="textos"><a href="blusas-e-tshirts.html">Blusas e T-shirts</a></div>
+            <div class="textos"><a href="casacos-e-blazers.html">Casacos e Blazers</a></div>
+        </div>
+
+        <!-- fim da nav-bar -->
+        
     </main>
 
     <footer>
